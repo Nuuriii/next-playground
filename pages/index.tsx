@@ -1,9 +1,15 @@
-import Link from 'next/link'
+// pages/index.tsx
+import React from "react";
+import { HelloWorld } from "../Components/HelloWorld";
+import { Click } from "../Components/Click";
 
-export default function IndexPage() {
-  return (
-    <div>
-      Hello World. <Link href="/about">About</Link>
-    </div>
-  )
-}
+const Home: React.FC = () => {
+   return (
+      <div>
+         <Click />
+         <HelloWorld message='Dunia' />
+      </div>
+   );
+};
+
+export default Home;
