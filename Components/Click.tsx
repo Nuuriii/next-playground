@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Paragraph } from "./Click.style";
 
 export const Click = () => {
    const [value, setValue] = useState(0);
@@ -13,7 +14,7 @@ export const Click = () => {
 
    return (
       <div>
-         <p>{value}</p>
+         <Paragraph>{value}</Paragraph>
          <button onClick={AddValue}>Tambah</button>
          <button onClick={MinValue}>Kurangi</button>
       </div>
